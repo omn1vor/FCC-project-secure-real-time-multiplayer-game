@@ -11,7 +11,7 @@ class Player {
     console.log(x, y, score, id);
   }
 
-  movePlayer(dir, speed, maxDims) {
+  movePlayer(dir, speed, maxDims = [640, 480]) {
     switch (dir) {
       case 'left':
         this.x -= speed;
